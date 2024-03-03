@@ -18,14 +18,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: black; 
+            color: black;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            background-color: rgba(255, 255, 255, 0.8); 
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         table th,
@@ -53,11 +53,12 @@
         }
 
         button {
-            padding: 6px 12px;
+            padding: 8px 16px;
             border: none;
             color: white;
             cursor: pointer;
             border-radius: 4px;
+            margin-right: 5px;
         }
 
         button.update {
@@ -65,15 +66,19 @@
         }
 
         button.delete {
-            background-color: red; 
+            background-color: red;
         }
 
         button.add {
-            background-color: #28a745; 
+            background-color: #28a745;
         }
 
-        button:hover {
-            opacity: 0.8;
+        button.logout {
+            background-color: #007bff;
+        }
+
+        button.logout:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -144,6 +149,9 @@
     ?>
     <form action="add.php">
         <button type="submit" class="add">Add</button>
+    </form>
+    <form action="login.php">
+        <button type="submit" class="logout">Logout</button>
     </form>
 </body>
 
