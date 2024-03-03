@@ -20,20 +20,20 @@
         }
         if(isset($_REQUEST['id'])) {
             $edit_id = $_REQUEST['id'];
-            $edit_query =  "SELECT * FROM experience where id = $edit_id";
+            $edit_query =  "SELECT * FROM portfolio where id = $edit_id";
             $info = mysqli_query($connection, $edit_query);
             while($row = mysqli_fetch_assoc($info)) {
     
     ?>
      <div class="container">
-        <h2>Update Experience</h2>
-        <form action="update.php" method="POST">
-            <label for="ex_icon">Icon</label>
-            <input type="text" name="ex_icon" value="<?php echo $row['ex_icon'] ?>">
-            <label for="ex_title">Title</label>
-            <input type="text" name="ex_title" value="<?php echo $row['ex_title'] ?>">
-            <label for="ex_text">Text</label>
-            <input type="text" name="ex_text" value="<?php echo $row['ex_text'] ?>">
+        <h2>Update Project</h2>
+        <form action="update2.php" method="POST">
+            <label for="p_image">Image</label>
+            <input type="text" name="p_image" value="<?php echo $row['p_image'] ?>">
+            <label for="p_name">Project Name</label>
+            <input type="text" name="p_name" value="<?php echo $row['p_name'] ?>">
+            <label for="p_details">Description</label>
+            <input type="text" name="p_details" value="<?php echo $row['p_details'] ?>">
             <!-- <label for="password">Password</label> -->
             <!-- <input type="password" name="password" value=""> -->
             <input type="submit" name="submit" value="Update">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Experience</title>
+    <title>Add Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,7 +64,7 @@
 </head>
 
 <body>
-    <h2>Add Experience</h2>
+    <h2>Add Project</h2>
     <?php
     $connection = mysqli_connect('localhost', 'root', '', 'myportfolio');
 
@@ -73,11 +73,11 @@
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $ex_icon = $_POST['ex_icon'];
-        $ex_title = $_POST['ex_title'];
-        $ex_text = $_POST['ex_text'];
+        $p_image = $_POST['p_image'];
+        $p_name = $_POST['p_name'];
+        $p_details = $_POST['p_details'];
 
-        $insert_query = "INSERT INTO experience (ex_icon, ex_title, ex_text) VALUES ('$ex_icon', '$ex_title', '$ex_text')";
+        $insert_query = "INSERT INTO portfolio (p_image, p_name, p_details) VALUES ('$p_image', '$p_name', '$p_details')";
 
         if (mysqli_query($connection, $insert_query)) {
             $message = "New record added successfully";
@@ -92,14 +92,14 @@
     mysqli_close($connection);
     ?>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="ex_icon">Icon:</label>
-        <input type="text" name="ex_icon" id="ex_icon" required><br><br>
+        <label for="p_image">Image:</label>
+        <input type="text" name="p_image" id="p_image" required><br><br>
 
-        <label for="ex_title">Title:</label>
-        <input type="text" name="ex_title" id="ex_title" required><br><br>
+        <label for="p_name">Project Name:</label>
+        <input type="text" name="p_name" id="p_name" required><br><br>
 
-        <label for="ex_text">Text:</label><br>
-        <textarea name="ex_text" id="ex_text" rows="4" cols="50" required></textarea><br><br>
+        <label for="p_details">Description:</label><br>
+        <textarea name="p_details" id="p_details" rows="4" cols="50" required></textarea><br><br>
 
         <input type="submit" value="Add">
     </form>

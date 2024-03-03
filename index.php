@@ -292,9 +292,43 @@ $user_data = mysqli_fetch_array($run);
                 ?>
                 <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
+        <?php
+        $portfolio =  "SELECT * FROM `portfolio` "; 
+        $portfolio_result = mysqli_query($db,$portfolio);
+        ?>
+
+
+
+
 
         <div class="portfolio-container">
-            <div class="portfolio-box">
+            <?php
+            if($portfolio_result -> num_rows > 0){
+                while($portfolio_data = $portfolio_result->fetch_assoc()){
+                    ?>
+                    <div class="portfolio-box">
+                       <img src="<?=$portfolio_data['p_image']?>" alt="">
+                       <div class="portfolio-layer">
+                         <h4><?=$portfolio_data['p_name']?></h4>
+                         <p><?=$portfolio_data['p_details']?></p>
+                         <a href="#"><i class='bx bx-link-external'></i></a>
+                       </div>
+                    </div>
+
+                    <?php
+                }
+            }
+            else {
+                echo "No Project Found";
+            }
+            ?>
+
+
+
+
+
+
+            <!-- <div class="portfolio-box">
                 <img src="How-to-create-a-book-order-form-in-WordPress-2-1.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
@@ -341,7 +375,7 @@ $user_data = mysqli_fetch_array($run);
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed facere fugit, tempora quas totam eligendi minima voluptates qui! Doloremque maiores necessitatibus iure assumenda tenetur. Vel in quod fugiat rem.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
                 <?php
