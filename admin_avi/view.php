@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Data</title>
+    <title>Admin Panel</title>
     <style>
-        html {
+        body {
             height: 100%;
+            margin: 0;
+            padding: 0;
             background-image: url('https://source.unsplash.com/1920x1080/?software');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
-
-        body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             color: black;
         }
 
@@ -28,14 +25,13 @@
         }
 
         table {
-            width: 80%; /* Adjust table width as needed */
-            max-width: 800px; /* Set maximum width for better responsiveness */
+            width: 80%;
+            max-width: 800px;
             border-collapse: collapse;
             margin: 20px 0;
             background-color: rgba(255, 255, 255, 0.8);
             animation: fadeIn 1s ease;
         }
-
 
         @keyframes fadeIn {
             from {
@@ -93,24 +89,37 @@
         button.add {
             background-color: #28a745;
         }
-
+        
         button.logout {
             background-color: #007bff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* Adjust the margin as needed */
+            display: block;
+            /* Make the button a block element to center it */
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        
 
         button.logout:hover {
             background-color: #0056b3;
         }
+        
         button.add:hover {
             background-color: green;
         }
+        
         button.update:hover {
             background-color: yellow;
         }
+        
         button.delete:hover {
             background-color: #E2A499;
         }
     </style>
+        
 </head>
 
 <body>
@@ -138,7 +147,7 @@
                         <th>ex_icon</th>
                         <th>ex_title</th>
                         <th>ex_text</th>
-                        <th>Action</th>
+                        <th>Operation</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -159,6 +168,8 @@
                                     <input type="hidden" name="id" value="<?php echo $id ?>">
                                     <button type="submit" class="update">Update</button>
                                 </form>
+                                <br>
+                                <br>
                                 <form action="delete.php" method="get">
                                     <input type="hidden" name="id" value="<?php echo $id ?>">
                                     <button type="submit" class="delete">Delete</button>
@@ -170,7 +181,7 @@
                     ?>
                 </tbody>
             </table>
-            <br>
+            <!-- <br> -->
         <?php
         } else {
             echo "No data in database.";
@@ -209,7 +220,7 @@
                         <th>p_image</th>
                         <th>p_name</th>
                         <th>p_details</th>
-                        <th>Action</th>
+                        <th>Operation</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -243,7 +254,7 @@
                     ?>
                 </tbody>
             </table>
-            <br>
+            <!-- <br> -->
         <?php
         } else {
             echo "No data in database.";
@@ -258,7 +269,7 @@
         <form action="add2.php">
             <button type="submit" class="add">Add</button>
         </form>
-        <br>
+        <!-- <br> -->
         <form action="login.php">
             <button type="submit" class="logout">Logout</button>
         </form>

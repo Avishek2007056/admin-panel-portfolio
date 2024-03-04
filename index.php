@@ -185,7 +185,7 @@ $user_data = mysqli_fetch_array($run);
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2025 - 2026</div>
                             <h3>Master Degree - University</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
 
@@ -193,16 +193,16 @@ $user_data = mysqli_fetch_array($run);
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
-                            <h3>Master Degree - University</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2024</div>
+                            <h3>Honors Degree - University</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
                             
                         </div>
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
-                            <h3>Master Degree - University</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2020</div>
+                            <h3>College</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
                             
                         </div>
@@ -216,24 +216,24 @@ $user_data = mysqli_fetch_array($run);
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
-                            <h3>Master Degree - University</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2012 - 2014</div>
+                            <h3>Govt. Science School</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
 
                         </div>
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
-                            <h3>Master Degree - University</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2014 - 2018</div>
+                            <h3>St. Joseph School</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
                             
                         </div>
                     </div>
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2002 - 2005</div>
-                            <h3>Master Degree - University</h3>
+                            <div class="year"><i class='bx bxs-calendar'></i> 2008 - 2010</div>
+                            <h3>Zilla School , Chuadanga</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas cupiditate ad nulla sed molestias necessitatibus eveniet unde est eos nam doloremque obcaecati nisi porro sunt, delectus explicabo possimus fuga! Molestias.</p>
                             
                         </div>
